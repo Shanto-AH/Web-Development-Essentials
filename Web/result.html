@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Result</h1>
+        <p id=res></p>
+
+        <script>
+        var data = window.location.search;
+        var params = new URLSearchParams(data);
+
+        var name = params.get("name");
+        var email = params.get("email");
+        var mobile = params.get("mobile");
+        var city = params.get("city");
+        var getdata="Name:"+name+"<br>";
+        getdata +="Email:"+email+"<br>";
+        getdata +="Mobile:"+mobile+"<br>";
+        getdata +="City:"+city;
+        document.getElementById("res").innerHTML=getdata;
+        </script>
+    </body>
+</html>
